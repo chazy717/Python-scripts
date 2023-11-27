@@ -1,0 +1,37 @@
+# Variables storing data
+name = "John"  # A variable storing a string
+age = 25  # A variable storing an integer
+height = 1.75  # A variable storing a float
+
+# Print information using variables
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+
+# Writing code into reusable blocks
+def greet_person(person_name):
+    """A function to greet a person"""
+    greeting = "Hello, " + person_name + "!"
+    return greeting
+greeting_message = greet_person(name)
+print(greeting_message)
+
+# Conditional Statements
+def assess_age(person_age):
+    """A function to assess a person's age"""
+    if person_age < 18:
+        return "You are a minor."
+    elif 18 <= person_age < 65:
+        return "You are an adult."
+    else:
+        return "You are a senior citizen."
+
+# Using conditional statements
+age_status = assess_age(age)
+print(age_status)
+
+# Main part of the script
+if height > 1.80:
+    print("You are taller than 1.80 meters.")
+else:
+    print("You are not taller than 1.80 meters.")

@@ -1,0 +1,8 @@
+# Variables storing data
+name = "John"  # A variable storing a string
+age = 25  # A variable storing an integer
+height = 1.75  # A variable storing a float
+# Print information using variables
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)

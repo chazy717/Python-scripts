@@ -1,0 +1,45 @@
+# Function to add two numbers
+def add(x, y):
+    return x + y
+
+# Function to subtract two numbers
+def subtract(x, y):
+    return x - y
+
+# Function to multiply two numbers
+def multiply(x, y):
+    return x * y
+
+# Function to divide two numbers
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Cannot divide by zero"
+
+# Main calculator function
+def calculator():
+    print("Simple Calculator")
+
+    # Get user input for numbers and operation
+    num1 = float(input("Enter first number: "))
+    operator = input("Enter operation (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
+
+    # Perform the selected operation
+    if operator == "+":
+        result = add(num1, num2)
+    elif operator == "-":
+        result = subtract(num1, num2)
+    elif operator == "*":
+        result = multiply(num1, num2)
+    elif operator == "/":
+        result = divide(num1, num2)
+    else:
+        result = "Invalid operator"
+
+    # Display the result
+    print(f"Result: {result}")
+
+# Call the calculator function
+calculator()

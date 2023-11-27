@@ -1,0 +1,7 @@
+# Writing code into reusable blocks
+def greet_person(person_name):
+    """A function to greet a person"""
+    greeting = "Hello, " + person_name + "!"
+    return greeting
+greeting_message = greet_person(name)
+print(greeting_message)

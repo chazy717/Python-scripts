@@ -1,0 +1,12 @@
+# Conditional Statements
+def assess_age(person_age):
+    """A function to assess a person's age"""
+    if person_age < 18:
+        return "You are a minor."
+    elif 18 <= person_age < 65:
+        return "You are an adult."
+    else:
+        return "You are a senior citizen."
+# Using conditional statements
+age_status = assess_age(age)
+print(age_status)
